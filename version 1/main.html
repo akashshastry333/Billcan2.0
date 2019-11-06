@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+     <!-- Insert the scripts at the bottom of the HTML, but before you use any Firebase services -->
+      <!-- Add Firebase products that you want to use -->
+     
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">BillCan</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">BillCan</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">food</a>
+      <a class="mdl-navigation__link" href="">stationery</a>
+      <a class="mdl-navigation__link" href="">snacks</a>
+      <a class="mdl-navigation__link" href="">soft drinks</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+     <button onclick='logout()'>logout</button>
+    </div>
+  </main>
+</div>
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+<script >
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXn1LeOXPz30cyRvkDwL7-t-hxxeHQRls",
+    authDomain: "designproject-f9e91.firebaseapp.com",
+    databaseURL: "https://designproject-f9e91.firebaseio.com",
+    projectId: "designproject-f9e91",
+    storageBucket: "designproject-f9e91.appspot.com",
+    messagingSenderId: "865162320767",
+    appId: "1:865162320767:web:61ee2e6af865e5ec2bd84a",
+    measurementId: "G-S0R6158008"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>

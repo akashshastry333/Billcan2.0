@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+
+<style>
+body  {
+    background: url(n1.jpg) no-repeat center fixed; 
+	background-size: cover;
+    background-color: #cccccc;
+}
+h3{ color:white;
+}
+p{ color:white;
+}
+</style>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Admin Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+  <button onclick="login()">Login to Account</button>
+  </div>
+
+ 
+  
+ 
+
+
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXn1LeOXPz30cyRvkDwL7-t-hxxeHQRls",
+    authDomain: "designproject-f9e91.firebaseapp.com",
+    databaseURL: "https://designproject-f9e91.firebaseio.com",
+    projectId: "designproject-f9e91",
+    storageBucket: "designproject-f9e91.appspot.com",
+    messagingSenderId: "865162320767",
+    appId: "1:865162320767:web:61ee2e6af865e5ec2bd84a",
+    measurementId: "G-S0R6158008"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>

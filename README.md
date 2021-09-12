@@ -1,2 +1,6 @@
 # Billcan2.0
-admin login to be imlemented
+Web app for **inventory** **management** of canteen
+#HTML
+#CSS
+#JavaScript
+#**Firebase**
